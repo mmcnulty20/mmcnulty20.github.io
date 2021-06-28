@@ -168,8 +168,12 @@
 	}
 	// desc.text("Ruby on Rails")
 	// const clearDesc = function(e){ desc.empty() }
-	const clearDesc = function(e){ desc.removeClass(["row-1", "row-2", "row-3"]) }
+	const clearDesc = function(e){ 
+		desc.removeClass(["row-1", "row-2", "row-3"]) 
+		desc.text("")
+	}
 	par.on("mouseleave", clearDesc)
+	par.blur(clearDesc)
 	ul.on("mouseenter click", ".icon", function(e){
 		const row = $(e.target).data("row")
 		desc.removeClass(["row-1", "row-2", "row-3"])
