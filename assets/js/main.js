@@ -158,27 +158,37 @@
 	// Custom hovers/clicks for skills
 	const ul = $('.feature-icons')
 	const desc = $("<div class='skill-desc'>")
-	let li
-	let t = true
-	const clearDesc = function(e){ desc.empty() }
-	ul.on("mouseleave", clearDesc)
-	ul.on("mouseenter click", ".icon", function(e){ 
-		debugger;
-		desc.innerText = "hi"
-	})
-	if ( !breakpoints.active("<=xsmall") ) {
-		desc.append("test")
-		ul.append(desc)
+	const par = ul.parent()
+	if (!breakpoints.active("<=xsmall")) {
+		if (breakpoints.active("<=small")) {
+			desc.addClass("small")
+			par.removeClass("flex")
+		}
+		par.append(desc)
 	}
+	// desc.text("Ruby on Rails")
+	// const clearDesc = function(e){ desc.empty() }
+	const clearDesc = function(e){ desc.removeClass(["row-1", "row-2", "row-3"]) }
+	par.on("mouseleave", clearDesc)
+	ul.on("mouseenter click", ".icon", function(e){
+		const row = $(e.target).data("row")
+		desc.removeClass(["row-1", "row-2", "row-3"])
+		if (row) {
+			desc.addClass(`row-${row}`)
+		}
+		desc.text(e.target.children[0].innerText);
+	})
 	window.addEventListener("resize", () => { 
 		if (breakpoints.active("<=xsmall")) {
 			desc.remove()
 		} else if ( breakpoints.active("<=small") ) {
 			desc.addClass("small")
-			ul.append(desc)
+			par.removeClass("flex")
+			par.append(desc)
 		} else {
+			par.addClass("flex")
 			desc.removeClass("small")
-			ul.append(desc)
+			par.append(desc)
 		}
 	})
 

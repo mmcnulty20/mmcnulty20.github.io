@@ -889,7 +889,8 @@
 	ul.feature-icons {
 		list-style: none;
 		padding-left: 2em;
-
+		display: inline-block;
+		margin-bottom: 0;
 		li {
 			@include icon;
 			font-size: 1.5em;
@@ -928,11 +929,92 @@
 			}
 			> span {
 				display: none;
-				position: absolute;
-				z-index: 1;
 			}
-			&:hover > span {
+		}
+	}
+	.flex {
+		margin-bottom: 2.25em;
+		display: flex;
+		align-items: center;
+	}
+	.skill-desc {
+		font-size: 30px;
+		min-height: 30px;
+		margin: 0 0 0.7em 2em;
+		position: relative;
+		&.small {
+			&::before {
+				position: absolute;
+				border-top: 15px solid transparent;
+				border-left: 15px solid _palette(header, bg);
+				border-bottom: 15px solid transparent;
+				// content: "";
+				left: -20px;
+			}
+			&::after {
+				position: absolute;
+				border-top: 13px solid transparent;
+				border-left: 13px solid white;
+				border-bottom: 13px solid transparent;
+				// content: "";
+				top: 2px;
+				left: -20px;
+			}
+			&[class*="row-"] {
+				&::before { content: "" }
+				&::after { content: "" }
+			}
+		}
+		&:not(.small) {
+			padding: 3em 0.5em;
+			border-radius: 7px;
+			border: 1px solid _palette(header, bg);
+			text-align: center;
+			box-sizing: content-box;
+			width: 200px;
+			display: none;
+			&[class*="row-"] {
 				display: block;
+			}
+			&::before {
+				position: absolute;
+				border-top: 15px solid transparent;
+				border-right: 20px solid _palette(header, bg);
+				border-bottom: 15px solid transparent;
+				content: "";
+				left: -20px;
+			}
+			&::after {
+				position: absolute;
+				border-top: 14px solid transparent;
+				border-right: 19px solid white;
+				border-bottom: 14px solid transparent;
+				content: "";
+				left: -18px;
+			}
+			&.row-1 {
+				&::before {
+					top: 5%;
+				}
+				&::after {
+					top: calc(5% + 1px);
+				}
+			}
+			&.row-2 {
+				&::before {
+					top: calc(50% - 15px);
+				}
+				&::after {
+					top: calc(50% - 14px);
+				}
+			}
+			&.row-3 {
+				&::before {
+					bottom: 5%;
+				}
+				&::after {
+					bottom: calc(5% + 1px);
+				}
 			}
 		}
 	}
