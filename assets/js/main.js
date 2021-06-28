@@ -155,5 +155,37 @@
 
 			}
 		});
+	// Custom hovers/clicks for skills
+	const ul = $('.feature-icons')
+	const desc = $("<div class='skill-desc'>")
+	let li
+	let t = true
+	const clearDesc = function(e){ desc.empty() }
+	ul.on("mouseleave", clearDesc)
+	ul.on("mouseenter click", ".icon", function(e){ 
+		debugger;
+		desc.innerText = "hi"
+	})
+	if ( !breakpoints.active("<=xsmall") ) {
+		desc.append("test")
+		ul.append(desc)
+	}
+	window.addEventListener("resize", () => { 
+		if (breakpoints.active("<=xsmall")) {
+			desc.remove()
+		} else if ( breakpoints.active("<=small") ) {
+			desc.addClass("small")
+			ul.append(desc)
+		} else {
+			desc.removeClass("small")
+			ul.append(desc)
+		}
+	})
+
+	const cb = function(e) {
+	}
+	ul.on("click", function(e){
+
+	} )
 
 })(jQuery);

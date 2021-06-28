@@ -888,17 +888,18 @@
 
 	ul.feature-icons {
 		list-style: none;
-		padding-left: 0;
+		padding-left: 2em;
 
 		li {
 			@include icon;
+			font-size: 1.5em;
 			display: inline-block;
-			margin: 0 0 (_size(element-margin) * 0.75) 0;
+			margin: 0 0 (_size(element-margin) * 1.25) 0;
 			padding: 0.35em 0 0 3.5em;
 			position: relative;
 			vertical-align: top;
-			width: 48%;
-
+			// width: 48%;
+			
 			&:before {
 				background: _palette(accent1, bg);
 				border-radius: 100%;
@@ -911,6 +912,27 @@
 				text-align: center;
 				top: 0;
 				width: 2.5em;
+			}
+			&.other:before {
+				content: "";
+				background-size: 1em 1em;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			&.ruby:before {
+				background-image: url(../../images/icons8-ruby-programming-language.svg);
+			}
+			&.rails:before {
+				background-size: auto 0.7em;
+				background-image: url(../../images/Ruby_On_Rails_Logo.svg);
+			}
+			> span {
+				display: none;
+				position: absolute;
+				z-index: 1;
+			}
+			&:hover > span {
+				display: block;
 			}
 		}
 	}
@@ -1608,6 +1630,14 @@
 			h4 {
 				font-size: 1em;
 			}
+			// .feature-icons {
+			// 	position: relative;
+			// 	> .icon > span {
+			// 		position: relative;
+			// 		bottom: 0;
+			// 		display: block;
+			// 	}
+			// }
 
 		/* Image */
 
@@ -1773,6 +1803,13 @@
 		/* List */
 
 			ul {
+				&.feature-icons {
+					// position: relative;
+					br { display: none; }
+					> li > span {
+						display: block;
+					}
+				}
 				&.actions {
 					margin: 0 0 _size(element-margin) 0;
 

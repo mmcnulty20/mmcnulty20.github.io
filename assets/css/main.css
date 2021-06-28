@@ -2199,17 +2199,17 @@ ul.actions.fit.stacked {
 /* Feature Icons */
 ul.feature-icons {
   list-style: none;
-  padding-left: 0;
+  padding-left: 2em;
 }
 
 ul.feature-icons li {
   text-decoration: none;
+  font-size: 1.5em;
   display: inline-block;
-  margin: 0 0 1.6875em 0;
+  margin: 0 0 2.8125em 0;
   padding: 0.35em 0 0 3.5em;
   position: relative;
   vertical-align: top;
-  width: 48%;
 }
 
 ul.feature-icons li:before {
@@ -2237,6 +2237,32 @@ ul.feature-icons li:before {
   text-align: center;
   top: 0;
   width: 2.5em;
+}
+
+ul.feature-icons li.other:before {
+  content: "";
+  background-size: 1em 1em;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+ul.feature-icons li.ruby:before {
+  background-image: url(../../images/icons8-ruby-programming-language.svg);
+}
+
+ul.feature-icons li.rails:before {
+  background-size: auto 0.7em;
+  background-image: url(../../images/Ruby_On_Rails_Logo.svg);
+}
+
+ul.feature-icons li > span {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+ul.feature-icons li:hover > span {
+  display: block;
 }
 
 /* Icons */
@@ -2982,6 +3008,12 @@ input[type="button"]:disabled,
     font-size: 12pt;
   }
   /* List */
+  ul.feature-icons br {
+    display: none;
+  }
+  ul.feature-icons > li > span {
+    display: block;
+  }
   ul.actions {
     margin: 0 0 2.25em 0;
   }
