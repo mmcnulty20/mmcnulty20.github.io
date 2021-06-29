@@ -2473,6 +2473,10 @@ table.alt tfoot {
 }
 
 /* Button */
+.button.resume {
+  display: block;
+}
+
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
