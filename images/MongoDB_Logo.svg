@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 130.44299 290.60999"
+   version="1.1"
+   sodipodi:docname="MongoDB_Logo.svg"
+   width="130.44299"
+   height="290.60999"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)">
+  <metadata
+     id="metadata1024">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>MongoDB_Logo_FullColorBlack_RGB</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1434"
+     inkscape:window-height="756"
+     id="namedview1022"
+     showgrid="false"
+     inkscape:pagecheckerboard="true"
+     inkscape:zoom="1.393101"
+     inkscape:cx="126.15717"
+     inkscape:cy="140.38364"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g1599" />
+  <defs
+     id="defs995">
+    <style
+       id="style993">.cls-1{fill:#10aa50;}.cls-2{fill:#b8c4c2;}.cls-3{fill:#12924f;}.cls-4{fill:#21313c;}</style>
+  </defs>
+  <title
+     id="title997">MongoDB_Logo_FullColorBlack_RGB</title>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Layer 1"
+     style="display:none;opacity:1">
+    <path
+       class="cls-1"
+       d="M 128.10944,115.65 C 112.79944,48.109996 80.889428,30.129996 72.749428,17.419996 a 144.57,144.57 0 0 1 -8.9,-17.42 c -0.43,6 -1.22,9.78 -6.32,14.33 -10.24,9.13 -53.73,44.57 -57.39,121.310004 -3.41,71.55 52.6,115.67 60,120.23 5.69,2.8 12.62,0.06 16,-2.51 27.000012,-18.53 63.890012,-67.93 52.000012,-137.71"
+       id="path999-3"
+       style="fill:#10aa50" />
+    <path
+       class="cls-2"
+       d="m 66.169428,217.77 c -1.41,17.71 -2.42,28 -6,38.12 0,0 2.35,16.86 4,34.72 h 5.84 a 324.73,324.73 0 0 1 6.37,-37.39 c -7.56,-3.72 -9.92,-19.91 -10.21,-35.45 z"
+       id="path1001-6"
+       style="fill:#b8c4c2" />
+    <path
+       class="cls-3"
+       d="m 76.369428,253.23 v 0 c -7.64,-3.53 -9.85,-20.06 -10.19,-35.46 a 725.83,725.83 0 0 0 1.65,-76.35 c -0.4,-13.36 0.19,-123.740004 -3.29,-139.900004 a 134.29,134.29 0 0 0 8.21,15.89 c 8.14,12.72 40.060012,30.7 55.360012,98.240004 11.92,69.66 -24.77,118.93 -51.740012,137.58 z"
+       id="path1003-5"
+       style="fill:#12924f" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="g1599"
+     inkscape:label="Layer 1 copy"
+     style="display:inline">
+    <path
+       class="cls-1"
+       d="M 128.11943,115.65 C 112.80943,48.11 80.899428,30.129999 72.759428,17.419999 a 144.57,144.57 0 0 1 -8.9,-17.42 c -0.43,6 -1.22,9.78 -6.32,14.33 -10.24,9.13 -53.73,44.570001 -57.39,121.310001 -3.41,71.55 52.6,115.67 60,120.23 5.69,2.8 12.62,0.06 16,-2.51 27.000002,-18.53 63.890002,-67.93 52.000002,-137.71"
+       id="path999"
+       style="fill:#ffffff;fill-opacity:0.66129035" />
+    <path
+       class="cls-2"
+       d="m 66.179428,217.77 c -1.41,17.71 -2.42,28 -6,38.12 0,0 2.35,16.86 4,34.72 h 5.84 a 324.73,324.73 0 0 1 6.37,-37.39 c -7.56,-3.72 -9.92,-19.91 -10.21,-35.45 z"
+       id="path1001"
+       style="fill:#ffffff;fill-opacity:1" />
+    <path
+       class="cls-3"
+       d="m 76.379428,253.23 v 0 c -7.64,-3.53 -9.85,-20.06 -10.19,-35.46 a 725.83,725.83 0 0 0 1.65,-76.35 c -0.4,-13.36 0.19,-123.740001 -3.29,-139.900001 a 134.29,134.29 0 0 0 8.21,15.89 c 8.14,12.72 40.060002,30.700001 55.360002,98.240001 11.92,69.66 -24.77,118.93 -51.740002,137.58 z"
+       id="path1003"
+       style="fill:#ffffff;fill-opacity:0.86290324" />
+  </g>
+</svg>

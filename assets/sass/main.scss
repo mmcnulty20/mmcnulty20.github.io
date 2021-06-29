@@ -929,6 +929,18 @@
 				background-size: auto 0.7em;
 				background-image: url(../../images/Ruby_On_Rails_Logo.svg);
 			}
+			&.postgres:before {
+				background-image: url(../../images/PostgreSQL_logo.svg);
+			}
+			&.mongo:before {
+				background-image: url(../../images/MongoDB_Logo.svg);
+			}
+			&.redux:before {
+				background-image: url(../../images/redux_logo.svg);
+			}
+			&.express:before {
+				background-image: url(../../images/expressjs-icon.svg);
+			}
 			> span {
 				display: none;
 			}
@@ -1043,6 +1055,10 @@
 			}
 		}
 	}
+/* Header IMG */
+img.fade {
+	opacity: 75%;
+}
 
 /* Table */
 
